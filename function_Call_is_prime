@@ -1,0 +1,7 @@
+function result = is_prime(n) % y = f(x)
+    if n%2 ~= 0
+        result = disp([num2str(n) 'is a prime number.']);
+    else
+        result = disp([num2str(n) 'is not prime.']);
+    end
+end 
