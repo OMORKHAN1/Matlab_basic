@@ -1,0 +1,2 @@
+n = input('Enter a number: ');
+result = is_prime(n);
