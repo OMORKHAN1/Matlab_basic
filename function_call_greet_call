@@ -1,0 +1,2 @@
+name = input('Enter your name: ', 's'); // 's' tells MATLAB to treat the input as text, not as a number or expression.
+greet(name)
