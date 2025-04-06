@@ -1,0 +1,3 @@
+c = input('Enter temperature in celciuls: ');
+result = celsius_to_fahrenheit(c);
+disp([num2str(c) 'degree celsius to fahrenheit is ', num2str(result)])
