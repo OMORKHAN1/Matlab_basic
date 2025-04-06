@@ -1,0 +1,6 @@
+a = input('Enter base of a traingle: ');
+b = input('Enter height of a traingle: ');
+
+c = hypotenuse(a,b);
+
+disp(['Hypotenuse of the triangle is ', num2str(c)]);
