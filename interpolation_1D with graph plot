@@ -1,0 +1,20 @@
+// interpolation 1D & graph plot
+x = [1,2,3,4];
+y = [1,4,9,16];
+
+x_query = 2.5; 
+y_query = interp1(x,y,x_query);
+
+disp(['Estimated value of y at x =', num2str(x_query), 'is', '',  num2str(y_query)]);
+
+figure; % opens a new figure window for plotting.
+plot(x,y,'bo-','LineWidth', 1.5); % 'b' = blue color, 'o' = circular markers at each data point, '-' = solid line connecting the points
+hold on;
+
+plot(x_query, y_query, 'rx', 'MarkerSize', 10, 'LineWidth', 2); % 'r' = red color, 'x' = x-shaped markers
+
+xlabel('X');
+ylabel('Y');
+title('1D Interpolation using interp1');
+legend('Data points', 'Interpolated value', 'Location', 'best'); %legend gives data about graph, creats a tab on the graph, Data points' → refers to the 'bo-' plot,'Interpolated value' → refers to the 'rx' plot, 'Location', 'best' → MATLAB auto-chooses the least cluttered position for the legend
+grid on;
