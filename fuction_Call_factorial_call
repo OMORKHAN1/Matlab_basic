@@ -1,0 +1,8 @@
+n = input('Enter number:');
+
+if n < 0
+    disp('Factorial is not defined for negative numbers.');
+else
+    result = factorial(n); 
+    disp(['The factorial of ', num2str(n), ' is ', num2str(result)]);
+end
