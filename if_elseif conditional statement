@@ -1,0 +1,28 @@
+% Prompt user for input
+Number2 = input('Enter number2: ');
+Number1 = input('Enter number1: ');
+
+% Ask the user to choose an operation
+C = input('Press 1 to add, 2 to subtract, 3 to multiply, 4 to divide: ');
+
+% Perform the calculation based on the user's choice
+if C== 1
+    result = Number1 + Number2;
+    disp(['Sum of two numbers is: ', num2str(result)]); # num2str is a function that converts numbers to a character array (string). Bcz In MATLAB, you cannot directly concatenate a string with a number
+elseif C == 2
+    result = Number1 - Number2;
+    disp(['Subtraction of two numbers is: ', num2str(result)]);
+elseif C == 3
+    result = Number1 * Number2;
+    disp(['Multiplication of two numbers is: ', num2str(result)]);
+elseif C == 4
+    % Check for division by zero
+    if Number2 ~= 0
+        result = Number1 / Number2;
+        disp(['Division of two numbers is: ', num2str(result)]);
+    else
+        disp('Error: Division by zero is not allowed.');
+    end
+else
+    disp('Invalid choice. Please enter 1, 2, 3, or 4.');
+end
