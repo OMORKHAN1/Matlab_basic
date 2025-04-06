@@ -1,0 +1,9 @@
+// both files have to be in the same folder
+function result = factorial(n)
+    if n == 0 || n == 1
+        result = 1;
+    else 
+        result = n*factorial(n-1);
+    end 
+end 
+     
