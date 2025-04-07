@@ -1,0 +1,18 @@
+x = [0,1,2,3];
+y = [1,2,0,5];
+
+degree = 3;
+
+coefficient = polyfit(x,y,degree); % polyfit will build a polynomial equation, set degree eqaul to degree and then collect the coefficient from the equation.
+disp('Coefficients of the cubic polynomial:');
+disp(coefficient);
+
+x_fine = linspace(min(x),max(x),100); %linespace will create 100 x values min to large
+y_fitted = polyval(coefficient,x_fine); % with the help of coefficinet a new euation will be formed and 100 x_fine value will be insetetd to create 100 y value.
+
+figure;
+plot(x, y, 'ro', 'MarkerSize', 10, 'DisplayName', 'Data points' );% setting the name of the curve to Data points so that i can access this curve in the legend function
+hold on; 
+plot(x_fine,y_fitted,'b-', 'LineWidth', 1.5, 'DisplayName', 'Cubic fit' ); % setting the name of the curve to Cubic fit so that i can access this curve in the legend function
+grid on;
+legend('Location', 'best');
