@@ -15,4 +15,4 @@ plot(x, y, 'ro', 'MarkerSize', 10, 'DisplayName', 'Data points' );% setting the 
 hold on; 
 plot(x_fine,y_fitted,'b-', 'LineWidth', 1.5, 'DisplayName', 'Cubic fit' ); % setting the name of the curve to Cubic fit so that i can access this curve in the legend function
 grid on;
-legend('Location', 'best');
+legend('Location', 'best'); % 'Location' The keyword telling MATLAB you want to place the legend, 'best' - Let MATLAB automatically choose the best spot to avoid covering your data
