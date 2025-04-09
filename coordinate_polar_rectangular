@@ -1,0 +1,13 @@
+% Rectangular to Polar conversion
+z_rec = 3+4i;
+r = abs(z_rec);
+theta = angle(z_rec);
+theta_deg = rad2deg(theta);
+fprintf("Rectangula to polar: r = %.2f, theta = %.2f, degree = %.2f\n", r,theta,theta_deg);
+
+% Polar to Rectangular conversion
+r_polar = 5; 
+theta = 0.93;
+z_real = r_polar*cos(theta);
+z_img = r_polar*sin(theta);
+fprintf("Polar to rectangular: z = %.0f+%.0fi\n ",z_real,z_img);
